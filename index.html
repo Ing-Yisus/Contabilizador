@@ -19,6 +19,14 @@
 </head>
 <body>
   <div class="container py-4">
+
+    <!-- 🔙 BOTÓN DE REGRESO -->
+    <center>
+      <a href="https://ing-yisus.github.io/TikiThree/" class="btn btn-secondary mb-3">
+        ⬅ Regresar
+      </a>
+    </center>
+
     <div class="row justify-content-center">
       <div class="col-lg-8 col-md-10">
         <div class="card-custom">
@@ -114,8 +122,6 @@
       }
 
       document.getElementById('resultadoConversion').value = resultado.toFixed(2);
-
-      // 🔥 CORREGIDO
       document.getElementById('resultado').value = `${resultado.toFixed(2)} ${destino}`;
     }
 
@@ -128,7 +134,6 @@
         total += cantidad * valores[id];
       }
 
-      // 🔥 CORREGIDO
       document.getElementById('totalBilletes').value = `$${total.toFixed(2)}`;
     }
   </script>
